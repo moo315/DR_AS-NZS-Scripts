@@ -354,7 +354,7 @@ class DataLogging:
 
         # Time response criteria will take last placed value of Y variables
         for y in ys:
-            row_data.append(f'{y}_BEFORE_RCT_1S')
+            # row_data.append(f'{y}_BEFORE_RCT_1S')
             row_data.append(f'{y}_BEFORE_RCT_10s')
 
         for meas_value in self.meas_values:
@@ -457,7 +457,7 @@ class DataLogging:
 
         # Time response criteria will take last placed value of Y variables
         for y in ys:
-            row_data.append(str(self.tr_value[f'{y}_T_COM_{1}_PF']))
+            # row_data.append(str(self.tr_value[f'{y}_T_COM_{1}_PF']))
             row_data.append(str(self.tr_value[f'{y}_T_COM_{2}_PF']))
 
 
@@ -809,7 +809,7 @@ class CriteriaValidation:
 
 
                 # pass/fail assessment for the response commencement time
-                self.tr_value[f'{y}_T_COM_{1}_PF'] = 'Pass'
+                # self.tr_value[f'{y}_T_COM_{1}_PF'] = 'Pass'
 
                 self.ts.log_debug(f' Response commencement time 1.2s for {y}, '
                                   f'evaluation irrelevant for functions {self.functions}')
